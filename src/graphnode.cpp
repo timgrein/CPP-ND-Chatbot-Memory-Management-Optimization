@@ -19,17 +19,17 @@ GraphNode::~GraphNode()
 
 void GraphNode::AddToken(std::string token)
 {
-    _answers.emplace_back(token);
+    _answers.push_back(token);
 }
 
 void GraphNode::AddEdgeToParentNode(GraphEdge *edge)
 {
-    _parentEdges.emplace_back(edge);
+    _parentEdges.push_back(edge);
 }
 
 void GraphNode::AddEdgeToChildNode(std::unique_ptr<GraphEdge> edge)
 {
-    _childEdges.emplace_back(std::move(edge));
+    _childEdges.push_back(std::move(edge));
 }
 
 //// STUDENT CODE
