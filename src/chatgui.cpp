@@ -135,7 +135,7 @@ ChatBotPanelDialog::~ChatBotPanelDialog()
     //// STUDENT CODE
     ////
 
-    delete _chatLogic;
+    // chatLogic is now a unique ptr
 
     ////
     //// EOF STUDENT CODE
