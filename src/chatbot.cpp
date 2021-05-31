@@ -76,7 +76,7 @@ ChatBot &ChatBot::operator=(const ChatBot &other_chatbot) {
 
 ChatBot::ChatBot(ChatBot &&other_chatbot) {
 
-    std::cout << "ChatBot Move Constructor";
+    std::cout << "ChatBot Move Constructor" << std::endl;
 
     _chatLogic = other_chatbot._chatLogic;
     other_chatbot._chatLogic = nullptr;
@@ -94,7 +94,7 @@ ChatBot::ChatBot(ChatBot &&other_chatbot) {
 }
 
 ChatBot &ChatBot::operator=(ChatBot &&other_chatbot) {
-    std::cout << "ChatBot Move Assignment Operator";
+    std::cout << "ChatBot Move Assignment Operator" << std::endl;
 
     if (this == &other_chatbot) {
         return *this;
